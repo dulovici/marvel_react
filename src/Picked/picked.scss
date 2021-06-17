@@ -1,0 +1,19 @@
+
+
+.pick {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: rgba(158, 180, 180, 0.2);
+
+    img {
+        width: 50px;
+        margin: 3px;
+        
+    }
+
+    h3 {
+        margin-left: 20px;
+    }
+}
