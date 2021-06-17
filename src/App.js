@@ -21,18 +21,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-//  const key = 57a4249a4879ba67cbdc852312c377d8;
-//  http://gateway.marvel.com/v1/public/characters?apikey=____  API CHARACTERS
-
-// https://developer.marvel.com/account
-// https://developer.marvel.com/docs

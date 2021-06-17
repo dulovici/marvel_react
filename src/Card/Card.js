@@ -16,7 +16,6 @@ export const Card = (props) => {
                     <button>Info</button>
                 </Link>
 
-
                 <button onClick={()=>addMember(id)}>Add</button>
             </div>
         </div>
