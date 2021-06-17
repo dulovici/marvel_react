@@ -7,8 +7,6 @@ import { Single } from './Single/Single';
 
 function App() {
 
-
-
   return (
     <>
       <Header />

@@ -1,13 +1,12 @@
 import '../Picked/picked.scss';
 
-export const Picked = () => {
+export const Picked = (props) => {
+    const {data} = props;
 
     return (
-        <>
             <div className='pick'>
-                <img src='http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784.jpg' alt='img' />
-                <h3>3-D Man</h3>
+                <img src={`${data.thumbnail.path}.${data.thumbnail.extension}`} alt='img' />
+                <h3>{data.name}</h3>
             </div>
-        </>
     )
 }

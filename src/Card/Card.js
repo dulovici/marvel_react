@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 export const Card = (props) => {
     const { data } = props;
     const { id } = props;
-
-
+    const {addMember} = props;
+    
+    
     return (
         <div className='card'>
             <h2>{data.name}</h2>
@@ -14,7 +15,9 @@ export const Card = (props) => {
                 <Link to={`/single/${id}`}>
                     <button>Info</button>
                 </Link>
-                <button>Add</button>
+
+
+                <button onClick={()=>addMember(id)}>Add</button>
             </div>
         </div>
     )

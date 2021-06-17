@@ -1,4 +1,5 @@
 import '../Single/single.scss';
+import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
 export const Single = (props) => {
@@ -16,8 +17,10 @@ export const Single = (props) => {
     return (
         <div className='single-wr'>
             <div className='single-hdr'>
-                <h2>Marvel Heroes</h2>
-                <p>Homepage</p>
+            <h2>Marvel Heroes</h2>
+                <Link to='/'>
+                    <p>Homepage</p>
+                </Link>
             </div>
         </div>
     )
