@@ -23,6 +23,11 @@ export const Main = (props) => {
         :setMyTeam([...myTeam,hero])
     }
 
+    const removeMember = (id) => {
+        const removed = myTeam.filter(e => e.id !== id);
+        setMyTeam(removed)
+    }
+
     
 
     return (
@@ -39,13 +44,14 @@ export const Main = (props) => {
                 <div className='picks'>
                     <h2>- My team -</h2>
                     {myTeam.map(e => {
-                        return <Picked key={e.id} data={e}></Picked>
+                        return <Picked key={e.id} data={e} id={e.id} 
+                        removeMember={removeMember}/>
                     })}
                 </div>
             </div>
         : <Loader />
     )
-    
+
 }
 
 
