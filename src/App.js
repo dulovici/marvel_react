@@ -7,6 +7,7 @@ import { Single } from './Single/Single';
 
 function App() {
 
+
   return (
     <>
       <Header />
@@ -14,7 +15,6 @@ function App() {
       <Switch>
         <Route exact path='/' component={Main} />
         <Route path='/single/:id' component={Single} />
-        {/* <Redirect from='/' to='/main' /> */}
       </Switch>
     </>
   );
